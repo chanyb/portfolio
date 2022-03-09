@@ -1,7 +1,13 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to My Portfolio App"/>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 init">
+        <img alt="Vue logo" src="./assets/profile.jpg" style="width: 100px; ">
+      </div>
+      <div class="col-md-12 init">
+        <HelloWorld msg="Welcome to My Portfolio App"/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,6 +23,10 @@ export default {
 </script>
 
 <style>
+.init {
+  text-align: center;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
