@@ -33,7 +33,7 @@
                 <div class="row">
                     <span class="item preparing">Node.js</span>
                     <span class="item preparing">MySQL</span>
-                    <span class="item preparing">Git</span>
+                    <span class="item" @click="toggleItem('git')">Git</span>
                     <span class="item preparing">Jira</span>
                 </div>
                 <div class="row">
@@ -44,7 +44,7 @@
                     <span class="item preparing">Progress - Kinvey</span>
                 </div>
             </div>
-            <div v-if="flag.itemToggle" class="col-md-6">
+            <div v-if="flag.itemToggle" class="col-md-6 window-mr">
                 <div class="row" id="javascript" v-if="flag.itemToggle==='javascript'">
                     <div class="col-md-12">
                         <img src="@/assets/metory_1.png" style="width:100%; border: 1px solid black;" />
@@ -73,14 +73,25 @@
                 </div>
                 <div class="row" id="jsp" v-if="flag.itemToggle==='jsp'">
                     <div class="col-md-12">
-                        <img src="@/assets/python_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
-                        <p>오토인코더를 통한 iris data manifold 확인</p>
+                        <p>블록체인 기반 임상연구 플랫폼</p>
                         <ul style="text-align: left;">
-                            <li>tensorflow를 활용해 신경망 모델을 설계할 수 있습니다.</li>
-                            <li>파이썬의 문법을 이해하고 있으며, Selenium을 이용해 동적 크롤링을 하는 등의 작업이 가능합니다.</li>
+                            <li>JSP를 사용해 세션에 값을 저장하고 유저의 인증 등의 Backend 개발을 할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="git" v-if="flag.itemToggle==='git'">
+                    <div class="col-md-12">
+                        <img src="@/assets/git_1.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>블록체인 기반 임상연구 플랫폼</p>
+                        <ul style="text-align: left;">
+                            <li>git을 이용한 버전 관리, 협업이 가능합니다.</li>
                         </ul>
                     </div>
                 </div>
@@ -160,4 +171,11 @@ export default {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
+@media all and (min-width: 1200px) {
+    .window-mr {
+        padding-right: 10%
+    }
+}
 </style>
+s
