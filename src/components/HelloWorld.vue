@@ -13,7 +13,7 @@
                 <div class="row">
                     <span class="item" @click="toggleItem('javascript')">Javascript</span>
                     <span class="item" @click="toggleItem('python')">Python</span>
-                    <span class="item preparing">JSP</span>
+                    <span class="item" @click="toggleItem('jsp')">JSP</span>
                     <span class="item preparing">HTML</span>
                     <span class="item preparing">CSS</span>
                     <span class="item preparing">Java</span>
@@ -60,14 +60,27 @@
                 </div>
                 <div class="row" id="python" v-if="flag.itemToggle==='python'">
                     <div class="col-md-12">
-                        <img src="@/assets/metory_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/python_1.png" style="width:100%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
-                        <p>네이버 뉴스 기사 크롤러</p>
+                        <p>오토인코더를 통한 iris data manifold 확인</p>
                         <ul style="text-align: left;">
-                            <li>파이썬의 문법을 이해하고 있으며, Selenium을 이용해 동적으로 크롤링을 할 수 있습니다.</li>
-                            <li>tensorflow를 활용해 신경망 모델을 설계하고 분류 문제에 활용할 수 있습니다.</li>
+                            <li>tensorflow를 활용해 신경망 모델을 설계할 수 있습니다.</li>
+                            <li>파이썬의 문법을 이해하고 있으며, Selenium을 이용해 동적 크롤링을 하는 등의 작업이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="jsp" v-if="flag.itemToggle==='jsp'">
+                    <div class="col-md-12">
+                        <img src="@/assets/python_1.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>오토인코더를 통한 iris data manifold 확인</p>
+                        <ul style="text-align: left;">
+                            <li>tensorflow를 활용해 신경망 모델을 설계할 수 있습니다.</li>
+                            <li>파이썬의 문법을 이해하고 있으며, Selenium을 이용해 동적 크롤링을 하는 등의 작업이 가능합니다.</li>
                         </ul>
                     </div>
                 </div>
