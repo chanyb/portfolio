@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
-                        <p>블록체인 기반 임상연구 플랫폼</p>
+                        <p>https://github.com/chanyb</p>
                         <ul style="text-align: left;">
                             <li>git을 이용한 버전 관리, 협업이 가능합니다.</li>
                         </ul>
