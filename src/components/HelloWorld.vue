@@ -14,10 +14,10 @@
                     <span class="item" @click="toggleItem('javascript')">Javascript</span>
                     <span class="item" @click="toggleItem('python')">Python</span>
                     <span class="item" @click="toggleItem('jsp')">JSP</span>
-                    <span class="item preparing">HTML</span>
-                    <span class="item preparing">CSS</span>
-                    <span class="item preparing">Java</span>
-                    <span class="item preparing">C, C++</span>
+                    <span class="item" @click="toggleItem('html')">HTML</span>
+                    <span class="item" @click="toggleItem('css')">CSS</span>
+                    <span class="item" @click="toggleItem('java')">Java</span>
+                    <span class="item" @click="toggleItem('c')">C, C++</span>
                 </div>
                 <div class="row">
                     <h3>Frameworks</h3>
@@ -31,7 +31,9 @@
                     <h3>Software</h3>
                 </div>
                 <div class="row">
-                    <span class="item preparing">Node.js</span>
+                    <span class="item preparing">
+                        <span class="ready">Node.js</span>
+                    </span>
                     <span class="item preparing">MySQL</span>
                     <span class="item" @click="toggleItem('git')">Git</span>
                     <span class="item preparing">Jira</span>
@@ -80,6 +82,58 @@
                         <p>블록체인 기반 임상연구 플랫폼</p>
                         <ul style="text-align: left;">
                             <li>JSP를 사용해 세션에 값을 저장하고 유저의 인증 등의 Backend 개발을 할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="html" v-if="flag.itemToggle==='html'">
+                    <div class="col-md-12">
+                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>HTML</p>
+                        <ul style="text-align: left;">
+                            <li>HTML tag를 사용해 웹을 디자인 할 수 있으며, 코드를 확인하는 등의 작업을 통해 구조를 파악 할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="css" v-if="flag.itemToggle==='css'">
+                    <div class="col-md-12">
+                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>CSS</p>
+                        <ul style="text-align: left;">
+                            <li>css를 이용해 class, id, element 등 선택자들을 원하는 대로 꾸밀 수 있습니다.  </li>
+                            <li>media query를 사용하여 반응형 웹을 만들 수 있습니다.</li>
+                            <li>keyframe을 사용하여 애니메이션을 적용시킬 수 있습니다.</li>
+                            <li>Boostrap, ant-design-of-vue 등 사용 경험을 바탕으로 타 css프레임워크(또는 모듈) 사용에도 빠르게 적응할 수 있습니다. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="java" v-if="flag.itemToggle==='java'">
+                    <div class="col-md-12">
+                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>Java 개인 프로젝트 - 주소록</p>
+                        <ul style="text-align: left;">
+                            <li>절차지향 언어와는 다른 객체지향 언어의 대표격인 java의 문법을 이해하고 개발 할 수 있습니다.</li>
+                            <li>JAR 파일을 만들어 jsp에서 사용 할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="c" v-if="flag.itemToggle==='c'">
+                    <div class="col-md-12">
+                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>C, C++ - 수업 조교 경험 보유</p>
+                        <ul style="text-align: left;">
+                            <li>메모리 관리에 대해 이해하고 개발 할 수 있습니다.</li>
                         </ul>
                     </div>
                 </div>
@@ -151,6 +205,10 @@ export default {
 }
 .preparing {
     color: gray;
+
+    .ready {
+        color: red;
+    }
 }
 .preparing:hover {
     color: gray;
