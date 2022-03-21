@@ -24,7 +24,7 @@
                 </div>
                 <div class="row">
                     <span class="item" @click="toggleItem('vue')">Vue.js</span>
-                    <span class="item preparing">Nativescript</span>
+                    <span class="item" @click="toggleItem('nativescript')">Nativescript</span>
                     <span class="item preparing">Bootstrap</span>
                 </div>
                 <div class="row">
@@ -49,7 +49,7 @@
             <div v-if="flag.itemToggle" class="col-md-6 window-mr">
                 <div class="row" id="javascript" v-if="flag.itemToggle==='javascript'">
                     <div class="col-md-12">
-                        <img src="@/assets/metory_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/metory_1.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -62,7 +62,7 @@
                 </div>
                 <div class="row" id="python" v-if="flag.itemToggle==='python'">
                     <div class="col-md-12">
-                        <img src="@/assets/python_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/python_1.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -75,11 +75,11 @@
                 </div>
                 <div class="row" id="jsp" v-if="flag.itemToggle==='jsp'">
                     <div class="col-md-12">
-                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/jsp_1.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
-                        <p>블록체인 기반 임상연구 플랫폼</p>
+                        <p>블록체인 기반 임상연구 플랫폼 - JSP</p>
                         <ul style="text-align: left;">
                             <li>JSP를 사용해 세션에 값을 저장하고 유저의 인증 등의 Backend 개발을 할 수 있습니다.</li>
                         </ul>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="row" id="html" v-if="flag.itemToggle==='html'">
                     <div class="col-md-12">
-                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/html.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -99,7 +99,7 @@
                 </div>
                 <div class="row" id="css" v-if="flag.itemToggle==='css'">
                     <div class="col-md-12">
-                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/css.png" style="max-height: 600px; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -114,7 +114,7 @@
                 </div>
                 <div class="row" id="java" v-if="flag.itemToggle==='java'">
                     <div class="col-md-12">
-                        <img src="@/assets/java_address_book.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/java_address_book.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -127,7 +127,7 @@
                 </div>
                 <div class="row" id="c" v-if="flag.itemToggle==='c'">
                     <div class="col-md-12">
-                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/c.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -139,7 +139,7 @@
                 </div>
                 <div class="row" id="git" v-if="flag.itemToggle==='git'">
                     <div class="col-md-12">
-                        <img src="@/assets/git_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/git_1.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -151,7 +151,7 @@
                 </div>
                 <div class="row" id="vue" v-if="flag.itemToggle==='vue'">
                     <div class="col-md-12">
-                        <img src="@/assets/vue_blur.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/vue_blur.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -159,6 +159,20 @@
                         <ul style="text-align: left;">
                             <li>vuex를 이용한 상태관리를 할 수 있으며 axios를 이용한 request를 통해 개발 할 수 있습니다.</li>
                             <li>proxy table을 이용해 CORS 환경에서 개발 한 경험이 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="nativescript" v-if="flag.itemToggle==='nativescript'">
+                    <div class="col-md-12">
+                        <img src="@/assets/nativescript.jpg" style="max-height:700px; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>전자동의 앱 ARBO</p>
+                        <ul style="text-align: left;">
+                            <li>하이브리드 앱 프레임워크 중 하나인 nativescript를 사용하여 안드로이드, ios에서 모두 작동하는 앱을 개발 할 수 있습니다.</li>
+                            <li>알람, local-notification, 진동, 위치감지, 동작감지, 생체인증 등의 native 기능들을 적용할 수 있습니다.</li>
+                            <li>firebase를 이용한 push notification을 사용 할 수 있습니다.</li>
                         </ul>
                     </div>
                 </div>
@@ -249,4 +263,3 @@ export default {
     }
 }
 </style>
-s
