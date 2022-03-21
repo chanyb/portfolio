@@ -23,7 +23,7 @@
                     <h3>Frameworks</h3>
                 </div>
                 <div class="row">
-                    <span class="item preparing">Vue.js</span>
+                    <span class="item" @click="toggleItem('vue')">Vue.js</span>
                     <span class="item preparing">Nativescript</span>
                     <span class="item preparing">Bootstrap</span>
                 </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="row" id="java" v-if="flag.itemToggle==='java'">
                     <div class="col-md-12">
-                        <img src="@/assets/jsp_1.png" style="width:100%; border: 1px solid black;" />
+                        <img src="@/assets/java_address_book.png" style="width:100%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -146,6 +146,19 @@
                         <p>https://github.com/chanyb</p>
                         <ul style="text-align: left;">
                             <li>git을 이용한 버전 관리, 협업이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="vue" v-if="flag.itemToggle==='vue'">
+                    <div class="col-md-12">
+                        <img src="@/assets/vue_blur.png" style="width:100%; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>대상자관리 시스템</p>
+                        <ul style="text-align: left;">
+                            <li>vuex를 이용한 상태관리를 할 수 있으며 axios를 이용한 request를 통해 개발 할 수 있습니다.</li>
+                            <li>proxy table을 이용해 CORS 환경에서 개발 한 경험이 있습니다.</li>
                         </ul>
                     </div>
                 </div>
