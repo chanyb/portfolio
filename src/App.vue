@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 init">
-        <img alt="Vue logo" src="./assets/profile.jpg" style="width: 100px; ">
+        <img alt="Vue logo" src="./assets/bc.webp" style="width: 150px; ">
       </div>
       <div class="col-md-12 init">
         <HelloWorld msg="Welcome to My Portfolio App"/>
