@@ -34,7 +34,7 @@
                     <span class="item preparing">
                         <span class="ready">Node.js</span>
                     </span>
-                    <span class="item preparing">MySQL</span>
+                    <span class="item" @click="toggleItem('dbeaver')">DBeaver</span>
                     <span class="item" @click="toggleItem('git')">Git</span>
                     <span class="item preparing">Jira</span>
                 </div>
@@ -173,6 +173,19 @@
                             <li>하이브리드 앱 프레임워크 중 하나인 nativescript를 사용하여 안드로이드, ios에서 모두 작동하는 앱을 개발 할 수 있습니다.</li>
                             <li>알람, local-notification, 진동, 위치감지, 동작감지, 생체인증 등의 native 기능들을 적용할 수 있습니다.</li>
                             <li>firebase를 이용한 push notification을 사용 할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="dbeaver" v-if="flag.itemToggle==='dbeaver'">
+                    <div class="col-md-12">
+                        <img src="@/assets/dbeaver.png" style="max-height:700px; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>dbeaver를 활용한 데이터베이스 관리</p>
+                        <ul style="text-align: left;">
+                            <li>데이터베이스 관리 도구인 dbeaver에서 SQL을 통해 DB를 분석하거나 데이터의 CRUD를 진행할 수 있습니다.</li>
+                            <li>기존에 사용되던 DB를 분석하고 migration한 경험이 있습니다.</li>
                         </ul>
                     </div>
                 </div>
