@@ -189,6 +189,18 @@
                         </ul>
                     </div>
                 </div>
+                <div class="row" id="jira" v-if="flag.itemToggle==='jira'">
+                    <div class="col-md-12">
+                        <img src="@/assets/jira.png" style="max-height:700px; border: 1px solid black;" />
+                    </div>
+                    <div class="col-md-12">
+                        <!-- description -->
+                        <p>jira를 활용한 애자일 방식 프로젝트 진행</p>
+                        <ul style="text-align: left;">
+                            <li>새로운 프로젝트의 시작에 jira를 활용하여 화면 별 이슈를 나눈 뒤 개발을 진행하였고 '개발↔피드백' 과정을 유연하게 진행한 경험이 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
