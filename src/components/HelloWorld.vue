@@ -164,7 +164,7 @@
                 </div>
                 <div class="row" id="nativescript" v-if="flag.itemToggle==='nativescript'">
                     <div class="col-md-12">
-                        <img src="@/assets/nativescript.jpg" style="max-height:700px; border: 1px solid black;" />
+                        <img src="@/assets/nativescript.jpg" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -178,7 +178,7 @@
                 </div>
                 <div class="row" id="dbeaver" v-if="flag.itemToggle==='dbeaver'">
                     <div class="col-md-12">
-                        <img src="@/assets/dbeaver.png" style="max-height:700px; border: 1px solid black;" />
+                        <img src="@/assets/dbeaver.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
@@ -191,7 +191,7 @@
                 </div>
                 <div class="row" id="jira" v-if="flag.itemToggle==='jira'">
                     <div class="col-md-12">
-                        <img src="@/assets/jira.png" style="max-height:700px; border: 1px solid black;" />
+                        <img src="@/assets/jira.png" style="width:80%; border: 1px solid black;" />
                     </div>
                     <div class="col-md-12">
                         <!-- description -->
