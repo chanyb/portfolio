@@ -36,7 +36,7 @@
                     </span>
                     <span class="item" @click="toggleItem('dbeaver')">DBeaver</span>
                     <span class="item" @click="toggleItem('git')">Git</span>
-                    <span class="item preparing">Jira</span>
+                    <span class="item" @click="toggleItem('jira')">Jira</span>
                 </div>
                 <div class="row">
                     <h3>Service</h3>
