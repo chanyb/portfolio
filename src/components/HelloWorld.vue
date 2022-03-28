@@ -232,10 +232,6 @@ export default {
 }
 .preparing {
     color: gray;
-
-    .ready {
-        color: red;
-    }
 }
 .preparing:hover {
     color: gray;
