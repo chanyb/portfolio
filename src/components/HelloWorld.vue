@@ -25,7 +25,7 @@
 				<div class="row">
 					<span class="item" @click="toggleItem('vue')">Vue.js</span>
 					<span class="item" @click="toggleItem('nativescript')">Nativescript</span>
-					<span class="item preparing">Bootstrap</span>
+					<span class="item" @click="toggleItem('bootstrap')">Bootstrap</span>
 				</div>
 				<div class="row">
 					<h3>Software</h3>
