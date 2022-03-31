@@ -40,7 +40,7 @@
 					<h3>Service</h3>
 				</div>
 				<div class="row">
-					<span class="item preparing">Progress - Kendo UI for vue</span>
+					<span class="item" @click="toggleItem('kendo_ui_for_vue')">Progress - Kendo UI for vue</span>
 					<span class="item preparing">Progress - Kinvey</span>
 				</div>
 			</div>
@@ -220,6 +220,30 @@
 						<p>bootstrap 프레임워크를 사용한 UI 개발</p>
 						<ul style="text-align: left">
 							<li>bootstrap의 Grid system, css, component를 이용한 반응형 프론트엔드 디자인이 가능합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="kendo_ui_for_vue" v-if="flag.itemToggle === 'kendo_ui_for_vue'">
+					<div class="col-md-12">
+						<img src="@/assets/kendo_ui_for_vue.png" style="width: 80%; border: 1px solid black" />
+					</div>
+					<div class="col-md-12">
+						<!-- description -->
+						<p>웹 컴포넌트 라이브러리 서비스인 kendo-ui-for-vue 사용</p>
+						<ul style="text-align: left">
+							<li>영문으로 작성된 Docs 및 API reference를 읽고 라이브러리를 사용할 수 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="kinvey" v-if="flag.itemToggle === 'kinvey'">
+					<div class="col-md-12">
+						<img src="@/assets/kinvey.png" style="width: 80%; border: 1px solid black" />
+					</div>
+					<div class="col-md-12">
+						<!-- description -->
+						<p>BaaS인 Kinvey를 사용한 Backendless 서비스 개발</p>
+						<ul style="text-align: left">
+							<li>영문으로 작성된 Docs 및 API reference를 읽고 라이브러리를 사용할 수 있습니다.</li>
 						</ul>
 					</div>
 				</div>
