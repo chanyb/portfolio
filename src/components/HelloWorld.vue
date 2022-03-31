@@ -31,7 +31,7 @@
 					<h3>Software</h3>
 				</div>
 				<div class="row">
-					<span class="item preparing">Node.js</span>
+					<span class="item" @click="toggleItem('node')">Node.js</span>
 					<span class="item" @click="toggleItem('dbeaver')">DBeaver</span>
 					<span class="item" @click="toggleItem('git')">Git</span>
 					<span class="item" @click="toggleItem('jira')">Jira</span>
@@ -196,6 +196,30 @@
 						<p>jira를 활용한 애자일 방식 프로젝트 진행</p>
 						<ul style="text-align: left">
 							<li>새로운 프로젝트의 시작에 jira를 활용하여 화면 별 이슈를 나눈 뒤 개발을 진행하였고 '개발↔피드백' 과정을 유연하게 진행한 경험이 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="node" v-if="flag.itemToggle === 'node'">
+					<div class="col-md-12">
+						<img src="@/assets/nodejs.png" style="width: 80%; border: 1px solid black" />
+					</div>
+					<div class="col-md-12">
+						<!-- description -->
+						<p>nodejs, postman을 활용한 API 개발 및 테스트</p>
+						<ul style="text-align: left">
+							<li>nodejs의 express 프레임워크를 사용해 RESTful API를 개발할 수 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="bootstrap" v-if="flag.itemToggle === 'bootstrap'">
+					<div class="col-md-12">
+						<img src="@/assets/bootstrap.png" style="width: 80%; border: 1px solid black" />
+					</div>
+					<div class="col-md-12">
+						<!-- description -->
+						<p>nodejs, postman을 활용한 API 개발 및 테스트</p>
+						<ul style="text-align: left">
+							<li>nodejs의 express 프레임워크를 사용해 RESTful API를 개발할 수 있습니다.</li>
 						</ul>
 					</div>
 				</div>
