@@ -217,9 +217,9 @@
 					</div>
 					<div class="col-md-12">
 						<!-- description -->
-						<p>nodejs, postman을 활용한 API 개발 및 테스트</p>
+						<p>bootstrap 프레임워크를 사용한 UI 개발</p>
 						<ul style="text-align: left">
-							<li>nodejs의 express 프레임워크를 사용해 RESTful API를 개발할 수 있습니다.</li>
+							<li>bootstrap의 Grid system, css, component를 이용한 반응형 프론트엔드 디자인이 가능합니다.</li>
 						</ul>
 					</div>
 				</div>
