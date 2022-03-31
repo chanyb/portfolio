@@ -41,7 +41,7 @@
 				</div>
 				<div class="row">
 					<span class="item" @click="toggleItem('kendo_ui_for_vue')">Progress - Kendo UI for vue</span>
-					<span class="item preparing">Progress - Kinvey</span>
+					<span class="item" @click="toggleItem('kinvey')">Progress - Kinvey</span>
 				</div>
 			</div>
 			<div v-if="flag.itemToggle" class="col-md-6 window-mr">
