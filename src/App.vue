@@ -5,19 +5,29 @@
 				<img alt="Vue logo" src="./assets/bc.webp" style="width: 150px" />
 			</div>
 			<div class="col-md-12 init">
-				<HelloWorld msg="Welcome to My Portfolio App" />
+				<skills msg="Welcome to My Portfolio App" />
+			</div>
+			<div class="col-md-12">
+				<separator />
+			</div>
+			<div class="col-md-12">
+				<blog />
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import skills from "./components/skills.vue";
+import blog from "./components/blog.vue";
+import separator from "./components/separator.vue";
 
 export default {
 	name: "App",
 	components: {
-		HelloWorld,
+		skills,
+		blog,
+		separator
 	},
 };
 </script>
