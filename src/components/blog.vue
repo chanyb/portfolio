@@ -15,7 +15,7 @@
 						<p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">사실 시작은 4월에 전주에서부터 시작했지만, 제대로 강의를 수강한 것은 이직하고 부터다</p>
 						<div class="row">
 							<div class="col-md-12">
-								<a href="#" class="btn btn-primary" style="width:100%;">Go somewhere</a>
+								<a href="#" class="btn btn-primary" style="width:100%;" @click="prepare()">Go somewhere</a>
 							</div>
 						</div>
 					</div>
@@ -28,7 +28,11 @@
 <script>
 export default {
 	name:"componentBlog",
-	
+	methods: {
+		prepare: function() {
+			alert("준비중입니다.");
+		}
+	}
 };
 </script>
 
