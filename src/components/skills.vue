@@ -11,37 +11,61 @@
 					<h3>Language</h3>
 				</div>
 				<div class="row">
-					<span class="item" @click="toggleItem('javascript')">Javascript</span>
-					<span class="item" @click="toggleItem('python')">Python</span>
-					<span class="item" @click="toggleItem('jsp')">JSP</span>
-					<span class="item" @click="toggleItem('html')">HTML</span>
-					<span class="item" @click="toggleItem('css')">CSS</span>
-					<span class="item" @click="toggleItem('java')">Java</span>
-					<span class="item" @click="toggleItem('c')">C, C++</span>
+					<span class="col-md-2 item" @click="toggleItem('javascript')">Javascript</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('python')">Python</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('jsp')">JSP</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('html')">HTML</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('css')">CSS</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('java')">Java</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('c')">C, C++</span>
 				</div>
 				<div class="row">
 					<h3>Frameworks</h3>
 				</div>
 				<div class="row">
-					<span class="item" @click="toggleItem('vue')">Vue.js</span>
-					<span class="item" @click="toggleItem('nativescript')">Nativescript</span>
-					<span class="item" @click="toggleItem('bootstrap')">Bootstrap</span>
+					<span class="col-md-2 item" @click="toggleItem('vue')">Vue.js</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('nativescript')">Nativescript</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('bootstrap')">Bootstrap</span>
 				</div>
 				<div class="row">
 					<h3>Software</h3>
 				</div>
 				<div class="row">
-					<span class="item" @click="toggleItem('node')">Node.js</span>
-					<span class="item" @click="toggleItem('dbeaver')">DBeaver</span>
-					<span class="item" @click="toggleItem('git')">Git</span>
-					<span class="item" @click="toggleItem('jira')">Jira</span>
+					<span class="col-md-2 item" @click="toggleItem('node')">Node.js</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('dbeaver')">DBeaver</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('git')">Git</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('jira')">Jira</span>
 				</div>
 				<div class="row">
 					<h3>Service</h3>
 				</div>
 				<div class="row">
-					<span class="item" @click="toggleItem('kendo_ui_for_vue')">Progress - Kendo UI for vue</span>
-					<span class="item" @click="toggleItem('kinvey')">Progress - Kinvey</span>
+					<span class="col-md-2 item" @click="toggleItem('kendo_ui_for_vue')">Progress - Kendo UI for vue</span>
+				</div>
+				<div class="row">
+					<span class="col-md-2 item" @click="toggleItem('kinvey')">Progress - Kinvey</span>
 				</div>
 			</div>
 			<div v-if="flag.itemToggle" class="col-md-6 window-mr">
@@ -299,6 +323,7 @@ export default {
 <style scoped>
 .item {
 	margin-right: 10px;
+	margin: auto;
 }
 .item:hover {
 	color: #238038;
