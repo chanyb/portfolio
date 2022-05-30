@@ -24,7 +24,7 @@
 			<div class="col-md-4">
 				<div class="card" style="width: 300px; margin:auto">
 					<div style="position:absolute; width:100%; top:-20px;">
-						<span>2022-05-27 23:20</span>
+						<span>2022-05-30 13:29</span>
 					</div>
 					<img src="https://images.velog.io/images/jojo_devstory/post/dae32386-bffc-40c3-b866-5c1e64516902/Android%2010_0.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
