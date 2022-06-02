@@ -9,7 +9,7 @@
 					<div style="position:absolute; width:100%; top:-20px;">
 						<span>2022-05-27 23:20</span>
 					</div>
-					<img src="https://images.velog.io/images/jojo_devstory/post/dae32386-bffc-40c3-b866-5c1e64516902/Android%2010_0.jpg" class="card-img-top" alt="...">
+					<img src="@/assets/android.gif" class="card-img-top" style="width:200px; margin:auto;" alt="...">
 					<div class="card-body">
 						<h5 class="card-title" style="font-size:20px;">안드로이드 공부의 시작</h5>
 						<p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">사실 시작은 4월에 전주에서부터 시작했지만, 제대로 강의를 수강한 것은 이직하고 부터다</p>
@@ -26,7 +26,7 @@
 					<div style="position:absolute; width:100%; top:-20px;">
 						<span>2022-05-30 13:29</span>
 					</div>
-					<img src="https://images.velog.io/images/jojo_devstory/post/dae32386-bffc-40c3-b866-5c1e64516902/Android%2010_0.jpg" class="card-img-top" alt="...">
+					<img src="@/assets/android.gif" class="card-img-top" style="width:200px; margin:auto;" alt="...">
 					<div class="card-body">
 						<h5 class="card-title" style="font-size:20px;">안드로이드 생명주기</h5>
 						<p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">안드로이드 생명주기는 Activity의 생명주기와 Fragment 생명주기, Service 생명주기 등 다양하게 존재한다. 현재 내가 또다른 어떤 생명주기를 모르고 있는지를 모른다.. </p>
